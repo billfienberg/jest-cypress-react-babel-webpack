@@ -28,8 +28,8 @@ jobs:
 
       - name: Reconfigure Cypress agent
         run: |
-          sed -i -e 's|api_url:.*$|api_url: "https://sorry-cypress-demo-director.herokuapp.com/"|g' /*/.cache/Cypress/*/Cypress/resources/app/packages/server/config/app.yml
+          DEBUG=cypress:* cypress version
 
-      - name: Run tests
-        run: |
-          npm run test:e2e
+      # - name: Run tests
+      #   run: |
+      #     npm run test:e2e
