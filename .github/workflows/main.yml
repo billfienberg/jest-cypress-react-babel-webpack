@@ -26,6 +26,10 @@ jobs:
         run: |
           npm ci
 
-      - name: Run tests
+      - name: Reconfigure Cypress agent
         run: |
-          npm run test:e2e
+          DEBUG=cypress:* cypress version
+
+      # - name: Run tests
+      #   run: |
+      #     npm run test:e2e

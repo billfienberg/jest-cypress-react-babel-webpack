@@ -8,7 +8,7 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --parallel --key go-browns --ci-build-id jest-cypress-react-babel-webpack",
     "cy:open": "cypress open",
     "test:e2e": "is-ci \"test:e2e:run\" \"test:e2e:dev\"",
     "pretest:e2e:run": "npm run build",
@@ -36,7 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run test:e2e:run"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
