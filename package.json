@@ -63,6 +63,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "cypress": "^6.2.0",
+    "cypress-parallel": "^0.3.0",
     "eslint": "^7.17.0",
     "eslint-config-kentcdodds": "^17.3.0",
     "eslint-import-resolver-jest": "^3.0.0",
