@@ -10,6 +10,7 @@
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 --specsDir cypress/e2e",
     "test:e2e": "is-ci \"test:e2e:run\" \"test:e2e:dev\"",
     "pretest:e2e:run": "npm run build",
     "test:e2e:run": "start-server-and-test start http://localhost:8080 cy:run",
